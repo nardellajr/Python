@@ -6,6 +6,7 @@
 def find_smallest(arr):
     smallest = arr[0]
     smallest_index = 0
+    # start loop at 1, because smallest contains arr[0]
     for i in range(1, len(arr)):
         if arr[i] < smallest:
             smallest = arr[i]

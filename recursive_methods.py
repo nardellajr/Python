@@ -32,9 +32,9 @@ def count_arr(arr):
 
 
 def max_number_in_array(arr):
-    if not arr:
-        if len(arr) == 2:
-            return arr[0] if arr[0] > arr[1] else arr[1]
+    # if not arr:
+    if len(arr) == 2:
+        return arr[0] if arr[0] > arr[1] else arr[1]
 
     sub_max = max_number_in_array(arr[1:])
     return arr[0] if arr[0] > sub_max else sub_max
@@ -60,4 +60,5 @@ if __name__ == '__main__':
 
     print(f'Number of items in array: {count_arr(arr)}')
 
+    arr = [4, 7, 9, 1, 4, 0]
     print(f'Maximum number in list: {max_number_in_array(arr)}')
