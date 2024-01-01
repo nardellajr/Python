@@ -19,7 +19,7 @@ def mergesort(arr):
                 arr[k] = l[i]
                 i += 1
             else:
-                arr[k] = r[i]
+                arr[k] = r[j]
                 j += 1
             k += 1
 
