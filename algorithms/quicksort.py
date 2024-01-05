@@ -3,7 +3,7 @@ import random
 
 
 # Not choosing the correct pivot point effects Time complexity
-# In the "height of the call stack" size
+# And the "height of the call stack" size
 # Best case for the call stack  O(log n) and worse case O(n)
 # We have to touch every element when sorting so O(n)
 # Know take O(n) * O(log n) = O(n log n)  -- Best
